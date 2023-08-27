@@ -1,0 +1,15 @@
+function matchingStrings(stringList, queries) {
+    let c = [];
+    let count;
+    for (let i = 0; i < queries.length; i++) {
+        count = 0;
+        for (let j = 0; j < stringList.length; j++) {
+            if (queries[i] == stringList[j]) {
+                count++;
+
+            }
+        }
+        c.push(count);
+    }
+    return c;
+}
