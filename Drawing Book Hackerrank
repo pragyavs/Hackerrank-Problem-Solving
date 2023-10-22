@@ -1,0 +1,23 @@
+function pageCount(n, p) {
+    let d;
+    let c= Math.floor(p/2)
+    if(p==1 || p==n)
+    {
+        
+        return 0;
+    }
+    else if(n%2==0)
+    {
+        
+       let e= Math.floor((n-p+1)/2)
+       d=Math.min(c,e);
+       return d;
+    }
+    else
+    {
+        let f= Math.floor((n-p)/2)
+        let d=Math.min(c,f)
+        return d;
+    }
+    
+}
